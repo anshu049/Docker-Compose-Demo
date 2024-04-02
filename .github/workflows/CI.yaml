@@ -29,5 +29,5 @@ jobs:
           IMAGE1: docker-compose-demo
           REPOSITORY_TAG1: ${{ secrets.DOCKERHUB_USERNAME }}/docker-compose-demo
         run: |
-          docker build -t $REPOSITORY_TAG1 app/
+          docker build -t $REPOSITORY_TAG1 .
           docker push $REPOSITORY_TAG1
