@@ -26,4 +26,4 @@ services:
      - "mongodb"
 volumes:
   mongo-data:
-    driver: local
+    driver: local # to create physical storage on local file system
