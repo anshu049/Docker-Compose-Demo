@@ -12,7 +12,7 @@ services:
      - MONGO_INITDB_ROOT_USERNAME=admin
      - MONGO_INITDB_ROOT_PASSWORD=password
     volumes:
-     - mongo-data:/data/db
+     - mongo-data:/data/db # default path where mongodb stores data
   mongo-express:
     image: mongo-express
     restart: always
